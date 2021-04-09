@@ -3,6 +3,14 @@ createCanvas(600, 600);
 }
 function draw() {
 background(33,33,33);
+
+//backsquare
+square(75, 75, 450);
+square(100, 100, 400);
+square(125, 125, 350);
+square(150, 150, 300);
+
+strokeWeight(1);
 //hair background
 fill(48, 36, 2);
 stroke(0, 0, 0);
@@ -68,16 +76,38 @@ line( 300, 95, 300, 600);
 
 //body
 fill(0,0,0);
-rect(200, 310, 260, 300, 50, 80,0,0);
+rect(200, 310, 260, 300, 50, 90,0,0);
 
 
 
 //neck
+noStroke();
 fill(255,222,173);
 ellipse(315, 330, 120, 40);
+fill(255,222,173);
 rect(275, 275, 60, 50);
 
+//ears
+fill(196, 167, 122);
+ellipse(215, 210, 30,70);
+ellipse(385, 210, 30,70);
+
+//piercings
+stroke(0, 0, 0);
+fill(245, 244, 242);
+  //lobe
+  ellipse(213,235, 3, 3);
+  ellipse(387,235, 3, 3);
+  ellipse(393,230, 3, 3);
+  ellipse(240,250, 30, 30);
+  //conch
+    ellipse(203,207, 3, 3);
+  //rook
+   ellipse(209,204, 3, 3);
+   ellipse(209,198, 3, 3);
+  
 //head
+stroke(0, 0, 0);
 fill(255,222,173);
 ellipse(300, 200, 180, 200);
 fill(139, 69, 19);
@@ -118,6 +148,8 @@ triangle(300, 245, 325, 250, 275, 250);
 
 //bangs
 fill(48, 36, 2);
+
+triangle(300, 90, 400, 130, 200, 120);
 arc(300,95, 250, 250, 170, 70);
 arc(300,95, 250, 250, 40, 160);
 
@@ -126,4 +158,21 @@ stroke(255, 255, 255,100);
 line(250, 600, 250, 390);
 line(380, 600, 380, 390);
 line(430, 600, 430, 390);
+
+//lefteyebrows
+stroke(0,0,0);
+line(250, 160, 290, 160);
+line(250, 158, 290, 158);
+//righteyebrows
+line(310, 160, 345, 160);
+line(310, 158, 345, 158);
+strokeWeight(1);
+
+//frontsquare
+noFill();
+strokeWeight(2);
+stroke(255,255,255, 40);
+square(0, 0, 600);
+square(25, 25, 550);
+square(50, 50, 500);
 }
